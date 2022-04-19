@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Aldossary-midT2</string>
+    <string name="splashText">Welcome to the project of Dalal Aldossary, 201255</string>
+    <string name="dateTxt">PICK DATE</string>
+    <string name="selectDate">The date selected is: </string>
+    <string name="second">2ND ACTIVITY</string>
+    <string name="first">1ST ACTIVITY</string>
+    <string name="third">3RD ACTIVITY</string>
+    <string name="idTxt">ID: </string>
+    <string name="nameTxt">First Name: </string>
+    <string name="surnameTxt">Surname: </string>
+    <string name="nationalIDTxt">National ID: </string>
+    <string name="insertBttnText">INSERT</string>
+    <string name="deleteBttnText">DELETE</string>
+    <string name="viewAllTxt">VIEW TABLE</string>
+    <string-array name="cities">
+        <item>London</item>
+        <item>Riyadh</item>
+        <item>Paris</item>
+    </string-array>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splashText"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dateBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dateBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dateTxt"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dateTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle" />
+
+    <TextView
+        android:id="@+id/dateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The date selected is:"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tempTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateBttn" />
+
+    <TextView
+        android:id="@+id/tempTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX C"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/humidTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTxt" />
+
+    <TextView
+        android:id="@+id/humidTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XX %"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/secondActiveBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempTxt" />
+
+    <Button
+        android:id="@+id/secondActiveBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidTxt" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/cities"
+        app:layout_constraintBottom_toTopOf="@+id/tempTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

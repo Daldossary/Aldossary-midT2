@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <LinearLayout
+        android:orientation = "vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/idTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/idTxt"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/idEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter ID..."
+                    android:inputType="number"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/firstNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nameTxt"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/firstNameEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter First Name"
+                    android:inputType="textPersonName"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/surnameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/surnameTxt"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/surnameEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Surname..."
+                    android:inputType="textPersonName"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/nationalIDTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nationalIDTxt"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/nationalIDEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter National ID..."
+                    android:inputType="number"
+                    android:textSize="20dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/insertBttn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/insertBttnText"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/firstActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/first" />
+
+            <Button
+                android:id="@+id/thirdActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/third" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
